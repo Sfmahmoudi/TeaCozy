@@ -13,25 +13,107 @@ body {
 }
 
 /* header section */
+.header {
+  display: flex;
+  height: 69px;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
+  z-index: 2;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+  justify-content: left;
+
+}
+
+nav span {
+  text-decoration: underline;
+  background-color: black;
+  padding: 0 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+/* content section */
+
+
 .content {
   display: flex;
   flex-direction: column;
+  top: 69px;
+  justify-content: center;
+  /* align-items: space-between; */
 }
 
 .mission {
   display: flex;
+  flex-direction: column;
+  background-image: url("../images/img-mission-background.jpg");
+  height: 700px;
+  background-repeat: no-repeat;
+  width: 1200px;
+  justify-content: center;
+  align-self: center;
+}
+
+.mission-title {
+  z-index: 1;
+  background-color: black;
 
 }
 
 .featured-tea {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid white; */
 }
+
+div .featured {
+  text-align: center;
+  background-color: black;
+  width: 1000px;
+
+  /* border: 1px solid white; */
+}
+
+.varieties {
+  /* border: 1px solid white; */
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+}
+.blitz, .rum, .donut, .myrtle, .bizarre {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+}
+
 
 .locations {
   display: flex;
+  background-image: url("../images/img-locations-background.jpg");
 }
-
-/* content section */
 
 
 /* footer section */
